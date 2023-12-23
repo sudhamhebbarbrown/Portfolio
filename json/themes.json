@@ -1,0 +1,16 @@
+{
+    "default": {
+        "primaryColor": "#5b6d5b",
+        "backgroundColor": "#f0f0f0",
+        "textColor": "#333"
+    },
+    "dark": {
+        "primaryColor": "#4b8f8c",
+        "backgroundColor": "#333",
+        "textColor": "#fff"
+    },
+        "light": {
+        "primaryColor": "#8fa8a8",
+        "textColor": "#333"
+    }
+}

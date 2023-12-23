@@ -1,10 +1,17 @@
+:root {
+    --primaryColor: #090300; /* default value */
+    --backgroundColor: #090300; /* default value */
+    --textColor: #ddd; /* default value */
+    --borderColor : #fded02;
+}
+
 * {
     box-sizing: border-box; /* Apply box-sizing to all elements */
 }
 
 body {
-    background-color: #090300;
-    color: #ddd;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
 }
 
 #terminalContent {
@@ -21,31 +28,6 @@ body {
     left: 5px;
 }
 
-#terminalHeader {
-    height: 1.75em;
-    background-color: #ddd;
-    border-radius: 20px 20px 0 0;
-}
-
-#headerName {
-    position: absolute;
-    border-radius: 10px;
-    width: 40%;
-    height: 15px;
-    margin: 8px 5px 0 20px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: white;
-}
-
-.button {
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 8px 5px 0 0;
-    display: inline-block;
-    vertical-align: middle;
-}
 #githubIcon {
     float: right;
     color: black;
@@ -59,10 +41,10 @@ body {
 
 #terminalBody {
     padding: 2% 5% 3px 2%;
-    background-color: #090300;
+    background-color: var(--primaryColor);
     height: calc(100% - 10px); 
     overflow-y: auto;
-    border: solid 2px #fded02;
+    border: solid 2px var(--textColor);
 }
 
 #BodyContent {
@@ -71,9 +53,9 @@ body {
 
 input {
     width: 30%;
-    background-color: #090300;
+    background-color: var(--primaryColor);
     border-width: 0;
-    color: #ddd;
+    color: var(--textColor);
     font: 1em Consolas, monaco, monospace;
     font-weight: 700;
 }
@@ -96,3 +78,5 @@ a:hover {
 .localhost {
     color: red;
 }
+
+
